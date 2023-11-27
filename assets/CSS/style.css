@@ -3,18 +3,47 @@
     padding: 0;
 
 }
-header, footer{
+nav, footer{
     display: flex;
     justify-content: center;
     background-color: dodgerblue;
     color: white;
-    height: 5vh;
+    height: 10vh;
     text-align: center;
     align-items: center;
 }
 main{
     display: flex;
     flex-direction: row;
-    height: 90vh;
+    height: 80vh;
     background-color: lightgray;
+}
+aside{
+    width: 20vw;
+}
+#productos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    gap: 30px;
+
+}
+.gris{
+    color: dimgrey;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: aliceblue;
+    height: 325px;
+    width: 200px;
+}
+button{
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
 }
