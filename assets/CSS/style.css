@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+header, footer{
+    display: flex;
+    justify-content: center;
+    background-color: dodgerblue;
+    color: white;
+    height: 5vh;
+    text-align: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    background-color: lightgray;
+}
