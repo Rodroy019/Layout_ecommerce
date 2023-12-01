@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 <body>
-    <nav>
-        <h1>Mi Ecommerce</h1>
-    </nav>
-    <main class="flex">
-        <aside>
+    <main class="grid-container">
+        <header class="header">
+            <h1>Mi Ecommerce</h1>
+        </header>
+        
+        <aside class="aside">
             <h2>Categorias</h2>
             <br>
             <ul>
@@ -19,41 +20,81 @@
                 <li>Ropa <spam class="gris">(21)</spam></li>
                 <li>Accesorios <spam class="gris">(41)</spam></li>
                 <li>Zapatos <spam class="gris">(10)</spam></li>
-            </ul>
+                <li>Electronica <spam class="gris">(4)</spam></li>
+            </ul> 
         </aside>
-        <section id="productos" class="grill-productos">
+        
+        <section id="productos" class="producto grill-productos">
             <div class="card">
-                <img src="" alt="Foto de Producto">
-                <h3>Nombre</h3>
-                <p>$31.990</p>
+                <img src="assets/IMG/ipad.png" alt="Foto de Producto">
+                <div class="card-info">
+                    <h3>iPad 10,2"</h3>
+                    <p>$269.990</p>
+                </div>
                 <button>Comprar</button>
             </div>
             <div class="card">
-                <img src="" alt="Foto de Producto">
-                <h3>Nombre</h3>
-                <p>$68.990</p>
+                <img src="assets/IMG/watch.png" alt="Foto de Producto">
+                <div class="card-info">
+                    <h3>Apple Watch</h3>
+                    <p>$469.990</p>
+                </div>
                 <button>Comprar</button>
             </div>
             <div class="card">
-                <img src="" alt="Foto de Producto">
-                <h3>Nombre</h3>
-                <p>$29.990</p>
+                <img src="assets/IMG/airpods.png" alt="Foto de Producto">
+                <div class="card-info">
+                    <h3>Airpods</h3>
+                    <p>$259.990</p>
+                </div>
                 <button>Comprar</button>
             </div>
             <div class="card">
-                <img src="" alt="Foto de Producto">
-                <h3>Nombre</h3>
-                <p>$44.990</p>
+                <img src="assets/IMG/iphone.png" alt="Foto de Producto">
+                <div class="card-info">
+                    <h3>Iphone 15 Pro Max</h3>
+                    <p>$1.469.990</p>
+                </div>
+                <button>Comprar</button>
+            </div>
+            <!-- Duplicado -->
+            <div class="card">
+                <img src="assets/IMG/ipad.png" alt="Foto de Producto">
+                <div class="card-info">
+                    <h3>iPad 10,2"</h3>
+                    <p>$269.990</p>
+                </div>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="assets/IMG/watch.png" alt="Foto de Producto">
+                <div class="card-info">
+                    <h3>Apple Watch</h3>
+                    <p>$469.990</p>
+                </div>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="assets/IMG/airpods.png" alt="Foto de Producto">
+                <div class="card-info">
+                    <h3>Airpods</h3>
+                    <p>$259.990</p>
+                </div>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="assets/IMG/iphone.png" alt="Foto de Producto">
+                <div class="card-info">
+                    <h3>Iphone 15 Pro Max</h3>
+                    <p>$1.469.990</p>
+                </div>
                 <button>Comprar</button>
             </div>
         </section>
+        
+        <footer class="footer">
+            <p>Rodrigo Rivas Figueroa 2023. All Rights Reserved.</p>
+        </footer>
     </main>
-
-
-
-
-    <footer>
-        <p>Rodrigo Rivas Figueroa 2023. All Rights Reserved.</p>
-    </footer>
-</body>
+    </body>    
 </html>

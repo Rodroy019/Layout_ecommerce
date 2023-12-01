@@ -1,49 +1,80 @@
 *{
     margin: 0;
     padding: 0;
-
 }
-nav, footer{
+header, footer{
     display: flex;
+    align-items: center;
     justify-content: center;
     background-color: dodgerblue;
     color: white;
-    height: 10vh;
-    text-align: center;
-    align-items: center;
-}
-main{
-    display: flex;
-    flex-direction: row;
-    height: 80vh;
-    background-color: lightgray;
+    height: 5vh;
 }
 aside{
-    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+li{
+    list-style: none;
 }
 #productos{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80vw;
-    gap: 30px;
-
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: start;
+    justify-content: center;
+    background-color: white;
+    gap: 20px;
+    height: 90vh;
 }
+#productos img{
+    width: 80%;  
+    margin: 10px;
+    border: 1px solid gray;
+}
+
 .gris{
     color: dimgrey;
 }
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: end;
     align-items: center;
     background-color: aliceblue;
-    height: 325px;
-    width: 200px;
+   
+}
+.card-info{
+    text-align: center;
 }
 button{
     background-color: dodgerblue;
     color: white;
-    font-size: 20px;
-    width: 200px;
-    height: 50px;
+    width: 80%;
+    height: 40px;
+}
+
+.header{
+    grid-area: header;
+}
+.aside{
+    grid-area: aside;
+}
+.producto{
+    grid-area: producto;
+}
+.footer{
+    grid-area: footer; 
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px auto;
+    background-color: lightgray;
+    grid-template-areas: 
+    "header header"
+    "aside  producto"
+    "footer footer"
+    ;
 }
